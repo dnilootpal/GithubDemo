@@ -50,5 +50,26 @@ public class ErrorValidationsTest extends BaseTest{
 	
 
 	}
+	
+	@Test
+	public void ProductErrorValidationBranch() throws InterruptedException, IOException
+	{
+		
+		String productName = "ZARA COAT 3";
+
+	
+		ProductCatalogue productCataloguePage = landingPage.loginApplication("dnilootpal@gmail.com", "Nilu@310596");
+		List<WebElement> products = productCataloguePage.getProductList();
+		productCataloguePage.addProductToCart(productName);
+
+		// Inheritance used so we can use parent class methods in child's class
+		CartPage cartPage = productCataloguePage.goToCartPage();
+		Boolean match = cartPage.verifyProductDisplay("ZARA COAT 33");
+
+		Assert.assertFalse(match);
+
+	
+
+	}
 
 }

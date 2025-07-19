@@ -171,7 +171,10 @@ public class SubmitOrderTest extends BaseTest{
 		System.out.println("Github practice3");
 		System.out.println("Github practice4");
 		System.out.println("Github practice5");
-
+		
+		System.out.println("Branch learn 1");
+		System.out.println("Branch learn 2");
+		System.out.println("Branch learn 3");
 		
 
 	}
