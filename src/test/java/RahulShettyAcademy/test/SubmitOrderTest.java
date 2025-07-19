@@ -165,6 +165,9 @@ public class SubmitOrderTest extends BaseTest{
 		List<HashMap<String, String>> data= getJasonDataToHashMap("C:\\Users\\844714\\OneDrive - Cognizant\\eclipse-workspace\\SeleniumFrameworkDesign2\\src\\test\\java\\RahulShettyAcademy\\data\\PurchaseOrder.json");
 		
 		return new Object[][] {{data.get(0)}, {data.get(1)}};
+		System.out.println("Github practice");
+		System.out.println("Github practice2");
+
 	}
 	
 	
